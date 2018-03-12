@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Cinco de Matt-o</string>
+    <string name="titleText">Welcome to Matt\'s Cinco de Mayo \n 21st Birthday party!</string>
+    <string name="ButtonText">Lets get Started</string>
+    <string name="cinco_de_mayo">Cinco de Mayo</string>
+    <string name="where_is_it">Where is it?</string>
+    <string name="when_is_it">When is it?</string>
+    <string name="quit">QUIT</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_where">Map</string>
+    <string name="info">Info</string>
+    <string name="address">Address:</string>
+    <string name="how_to_get_there">How to get there:</string>
+    <string name="_68_finchfield_road_west">68 Finchfield Road West \nWV3 8BA</string>
+    <string name="bus_no_3_from_town"> Bus no. 3 from Town</string>
+    <string name="drive_limited_parking_available">Drive (Limited parking available)</string>
+    <string name="what_is_on">What is on?</string>
+    <string name="textview">TextView</string>
+    <string name="fibbage">Fibbage</string>
+    <string name="shots_and_ladders_xl">Shots and Ladders XL</string>
+    <string name="bbq">BBQ</string>
+    <string name="live_music">Live Music</string>
+    <string name="can_i_bring_alcohol">Can I bring Alcohol?</string>
+    <string name="the_more_the_merrier">The more the merrier!</string>
+    <string name="what_time_should_i_arrive">What time should I arrive?</string>
+    <string name="the_event_is_from_3pm_till_late">The event is from 3PM \ntill Late.</string>
+    <string name="done">Done</string>
+    <string name="seconds">seconds</string>
+    <string name="countleft">countleft</string>
+    <string name="minutes">minutes</string>
+    <string name="hours">hours</string>
+    <string name="days">days</string>
+    <string name="worldcup_2k19">Cinco De Matt-o PARTY</string>
+    <string name="counter">counter</string>
+    <string name="_12">12</string>
+    <string name="_12_12_59_59">12 12:59:59</string>
+</resources>
