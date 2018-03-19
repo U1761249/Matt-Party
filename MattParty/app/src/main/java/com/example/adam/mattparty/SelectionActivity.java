@@ -1,10 +1,18 @@
 package com.example.adam.mattparty;
 
+import android.content.Context;
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Selection;
 import android.view.View;
+import android.widget.Toast;
+
+import java.text.DateFormat;
+import java.util.Date;
 
 public class SelectionActivity extends AppCompatActivity {
 
@@ -16,10 +24,14 @@ public class SelectionActivity extends AppCompatActivity {
 
     public void whereMessage(View view){
         startActivity(new Intent(SelectionActivity.this, WhereActivity.class));}
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public void whenMessage(View view){
-        startActivity(new Intent(SelectionActivity.this, WhenActivity.class));}
+        startActivity(new Intent(SelectionActivity.this, WhenActivity.class));
+
+    }
     public void regMessage(View view){
-        startActivity(new Intent(SelectionActivity.this, RegisterActivity.class));}
+        startActivity(new Intent(SelectionActivity.this, SignUpActivity.class));}
+
     public void infoMessage(View view){
         startActivity(new Intent(SelectionActivity.this, InfoActivity.class));}
 }

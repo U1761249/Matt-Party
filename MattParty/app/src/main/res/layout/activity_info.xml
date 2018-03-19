@@ -128,14 +128,18 @@
             android:layout_row="11"
             android:text="@string/the_event_is_from_3pm_till_late" />
 
-        <Button
-            android:id="@+id/doneButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_column="1"
-            android:layout_row="17"
-            android:onClick="backMessage"
-            android:text="@string/done" />
-
     </GridLayout>
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_row="17"
+        android:onClick="backMessage"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

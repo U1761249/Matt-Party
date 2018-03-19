@@ -38,7 +38,7 @@ public class WhereActivity extends FragmentActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
+
         LatLng house = new LatLng(52.579788, -2.165218);
         mMap.addMarker(new MarkerOptions().position(house).title("68 Finchfield Rd West."));
         float zoomLevel = 16.0f; //This goes up to 21
