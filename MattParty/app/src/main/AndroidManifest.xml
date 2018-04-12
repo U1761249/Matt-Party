@@ -21,14 +21,14 @@
         android:roundIcon="@drawable/matt_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectionActivity" />
+        <activity android:name=".SelectionActivity"></activity>
         <activity
             android:name=".WhereActivity"
             android:label="@string/title_activity_where" />
@@ -36,7 +36,7 @@
             android:name=".WhenActivity"
             android:label="@string/title_activity_when"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SignUpActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -50,9 +50,7 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".InfoActivity" />
-        <activity
-            android:name=".SignUpActivity"
-            android:label="@string/title_activity_sign_up"></activity>
+
     </application>
 
 </manifest>

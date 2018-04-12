@@ -3,6 +3,7 @@ package com.example.adam.mattparty;
 import android.content.Context;
 import android.content.Intent;
 import android.icu.text.SimpleDateFormat;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +21,10 @@ public class SelectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection);
+    }
+    public void playMessage(View view){
+        final MediaPlayer mp = MediaPlayer.create(this, R.raw.mexican_tune);
+        mp.start();
     }
 
     public void whereMessage(View view){

@@ -29,6 +29,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -55,8 +56,27 @@ public class SignUpActivity extends AppCompatActivity {
 
         if ((email.length() > 0)&&(transport.length() > 0)&&(people.length() > 0)&&(song.length() > 0))
         {
-            startActivity(new Intent(SignUpActivity.this, SelectionActivity.class));}
-        }
+            int peopleCount = 0;
+            Boolean error = false;
+            try {
+                peopleCount = Integer.parseInt((people.getText()).toString());
+            } catch (NumberFormatException e) {
+                Toast.makeText(getApplicationContext(),"Number of people must be a Number.",Toast.LENGTH_LONG)
+                        .show();
+                error = true;
+
+            }
+            if (!error){
+                if (peopleCount > 0) {
+                    Toast.makeText(getApplicationContext(),
+                            "You have been registered for " + peopleCount + " people.",Toast.LENGTH_LONG)
+                            .show();
+                    startActivity(new Intent(SignUpActivity.this, SelectionActivity.class));
+                }
+                else {Toast.makeText(getApplicationContext(),"Number of people must be greater than 0.",Toast.LENGTH_LONG)
+                        .show();}
+            }
+        }}
     }
 
 

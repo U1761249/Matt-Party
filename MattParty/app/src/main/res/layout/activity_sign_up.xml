@@ -8,7 +8,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.adam.mattparty.SignUpActivity">
+    tools:context="com.example.adam.mattparty.SignUpActivity"
+    android:background="@color/colorPrimary"
+    >
 
     <!-- Login progress -->
     <ProgressBar
@@ -86,7 +88,9 @@
                 android:layout_marginTop="16dp"
                 android:onClick="signUpMessage"
                 android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorButtons"/>
 
         </LinearLayout>
     </ScrollView>
